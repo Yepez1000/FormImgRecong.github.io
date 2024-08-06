@@ -2,7 +2,7 @@
 <html lang="en">
 
 
-<!-- <link href="styles.css" rel="stylesheet" type="text/css"> -->
+<link href="styles.css" rel="stylesheet" type="text/css">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -158,7 +158,7 @@
             formData.append('file', blob, 'captured_image.jpg');
 
             // Upload captured image to the server
-            fetch('http://192.168.0.119:8080/upload', {
+            fetch('http://192.168.2.14:8080/upload', {
                 method: 'POST',
                 body: formData
             })

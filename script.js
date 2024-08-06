@@ -87,7 +87,7 @@ function captureAndUploadImage() {
     formData.append('file', blob, 'captured_image.jpg');
 
     // Upload captured image to the server
-    fetch('http://192.168.2.14:8080/upload', {
+    fetch('https://192.168.2.14:8080/upload', {
         method: 'POST',
         body: formData
     })
